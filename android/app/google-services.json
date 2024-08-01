@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424713582251",
+    "project_id": "example-183b9",
+    "storage_bucket": "example-183b9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424713582251:android:a7948bd2eea40f44dce9ee",
+        "android_client_info": {
+          "package_name": "com.example.firebase_messaging_example"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC_pwjV2Z-bWQFvbydNutB_zpRBHCCn-a0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

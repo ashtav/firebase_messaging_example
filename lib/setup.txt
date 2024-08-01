@@ -1,0 +1,59 @@
+
+    # SETUP
+
+    # packages
+
+    - firebase_core
+    - firebase_messaging
+    - flutter_local_notifications
+    - flutter_timezone
+
+    # configs
+
+    - android
+    |---- settings.gradle
+    |    
+    |        plugins {
+    |            id "org.jetbrains.kotlin.android" version "1.9.24" apply false
+    |        }
+    |
+    |---- build.gradle
+    |
+    |        buildscript {
+    |            ext.kotlin_version = '1.9.24'
+    |            repositories {
+    |                google()
+    |                mavenCentral()
+    |            }
+    |
+    |            dependencies {
+    |                classpath 'com.android.tools.build:gradle:7.3.0'
+    |                classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    |                classpath 'com.google.gms:google-services:4.3.13'
+    |            }
+    |        }
+    |
+    |---- app/build.gradle
+    |
+    |        plugins {
+    |            id 'com.google.gms.google-services'
+    |        }
+    |
+    |        dependencies {
+    |            implementation platform('com.google.firebase:firebase-bom:33.1.1')
+    |            implementation 'com.google.firebase:firebase-analytics'
+    |        }
+
+    # firebase
+
+    - settings project
+
+        to generate SHA1, paste this in terminal, change <user> as your device name
+        keytool -list -v -keystore C:\Users\ashta\.android\debug.keystore -alias androiddebugkey -storepass android -keypass android
+
+    - download and paste google-services.json file in your android/app folder 
+
+    # testing
+
+    - you can testing using token you receive after running your app
+    - or do subscribe for specific topic
